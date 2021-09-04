@@ -1,0 +1,43 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-truemotives3adapter-dev-171705-authRole",
+      "UnauthRoleArn": "arn:aws:iam::743067955746:role/amplify-truemotives3adapter-dev-171705-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::743067955746:role/amplify-truemotives3adapter-dev-171705-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-truemotives3adapter-dev-171705-deployment",
+      "UnauthRoleName": "amplify-truemotives3adapter-dev-171705-unauthRole",
+      "StackName": "amplify-truemotives3adapter-dev-171705",
+      "StackId": "arn:aws:cloudformation:us-east-1:743067955746:stack/amplify-truemotives3adapter-dev-171705/ade29260-0d04-11ec-9a01-12324404f95d",
+      "AmplifyAppId": "d14tqb6eyi8qkd"
+    }
+  },
+  "api": {
+    "truemotives3adapter": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 365,
+              "description": "truemotive video api key"
+            }
+          },
+          "additionalAuthenticationProviders": []
+        },
+        "GraphQLAPIIdOutput": "ov6dkyzttjacrebtjrmzuahp2q",
+        "GraphQLAPIEndpointOutput": "https://5ihnccjfsrdstfr7lte5pnp3hu.appsync-api.us-east-1.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-k2ybrgqsxzdxlh66pxriuvojl4"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-truemotives3adapter-dev-171705-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apitruemotives3adapter"
+      },
+      "lastPushTimeStamp": "2021-09-04T03:20:01.290Z",
+      "lastPushDirHash": "XkZiS8fxfPFBOZ2kil1HQKP5Iio="
+    }
+  },
+  "video": {}
+}

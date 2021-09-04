@@ -1,0 +1,8 @@
+{
+    "CreateAPIKey": 1,
+    "AppSyncApiName": "truemotives3adapter",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "S3DeploymentBucket": "amplify-truemotives3adapter-dev-171705-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/1e0af1c749b5850c945ce955467c1e00d6ac94a0"
+}

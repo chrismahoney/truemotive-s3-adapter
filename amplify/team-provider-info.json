@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-truemotives3adapter-dev-171705-authRole",
+      "UnauthRoleArn": "arn:aws:iam::743067955746:role/amplify-truemotives3adapter-dev-171705-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::743067955746:role/amplify-truemotives3adapter-dev-171705-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-truemotives3adapter-dev-171705-deployment",
+      "UnauthRoleName": "amplify-truemotives3adapter-dev-171705-unauthRole",
+      "StackName": "amplify-truemotives3adapter-dev-171705",
+      "StackId": "arn:aws:cloudformation:us-east-1:743067955746:stack/amplify-truemotives3adapter-dev-171705/ade29260-0d04-11ec-9a01-12324404f95d",
+      "AmplifyAppId": "d14tqb6eyi8qkd"
+    }
+  }
+}
