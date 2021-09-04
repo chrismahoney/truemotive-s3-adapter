@@ -10,6 +10,17 @@
       "StackName": "amplify-truemotives3adapter-dev-171705",
       "StackId": "arn:aws:cloudformation:us-east-1:743067955746:stack/amplify-truemotives3adapter-dev-171705/ade29260-0d04-11ec-9a01-12324404f95d",
       "AmplifyAppId": "d14tqb6eyi8qkd"
+    },
+    "categories": {
+      "auth": {
+        "truemotives3adapter1c981494": {}
+      },
+      "function": {
+        "S3Trigger8ff6a97a": {
+          "deploymentBucketName": "amplify-truemotives3adapter-dev-171705-deployment",
+          "s3Key": "amplify-builds/S3Trigger8ff6a97a-306b482f68537a543755-build.zip"
+        }
+      }
     }
   }
 }

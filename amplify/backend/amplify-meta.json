@@ -35,9 +35,102 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-truemotives3adapter-dev-171705-deployment/amplify-cfn-templates/api/cloudformation-template.json",
         "logicalId": "apitruemotives3adapter"
       },
-      "lastPushTimeStamp": "2021-09-04T03:20:01.290Z",
+      "lastPushTimeStamp": "2021-09-04T04:24:25.737Z",
       "lastPushDirHash": "XkZiS8fxfPFBOZ2kil1HQKP5Iio="
     }
   },
-  "video": {}
+  "video": {},
+  "auth": {
+    "truemotives3adapter1c981494": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "loginMechanisms": [
+          "EMAIL"
+        ],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-truemotives3adapter-dev-171705-deployment/amplify-cfn-templates/auth/truemotives3adapter1c981494-cloudformation-template.yml",
+        "logicalId": "authtruemotives3adapter1c981494"
+      },
+      "lastPushTimeStamp": "2021-09-04T04:24:25.748Z",
+      "output": {
+        "UserPoolId": "us-east-1_mrC7WlJBd",
+        "AppClientIDWeb": "3h2r8c82po1b7r4215vv29jh50",
+        "AppClientID": "2pmgfp3tbsfn2rgjbmol97vfe0",
+        "IdentityPoolId": "us-east-1:e11790b6-a417-417f-889c-94729d037ba2",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:743067955746:userpool/us-east-1_mrC7WlJBd",
+        "IdentityPoolName": "truemotives3adapter1c981494_identitypool_1c981494__dev",
+        "UserPoolName": "truemotives3adapter1c981494_userpool_1c981494"
+      },
+      "lastPushDirHash": "rqgVhkprkGmUkgWzuuFpFofQDCY="
+    }
+  },
+  "function": {
+    "S3Trigger8ff6a97a": {
+      "service": "Lambda",
+      "providerPlugin": "awscloudformation",
+      "build": true,
+      "lastBuildTimeStamp": "2021-09-04T04:21:20.868Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2021-09-04T04:21:20.915Z",
+      "distZipFilename": "S3Trigger8ff6a97a-306b482f68537a543755-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-truemotives3adapter-dev-171705-deployment",
+        "s3Key": "amplify-builds/S3Trigger8ff6a97a-306b482f68537a543755-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-truemotives3adapter-dev-171705-deployment/amplify-cfn-templates/function/S3Trigger8ff6a97a-cloudformation-template.json",
+        "logicalId": "functionS3Trigger8ff6a97a"
+      },
+      "lastPushTimeStamp": "2021-09-04T04:24:25.748Z",
+      "output": {
+        "Region": "us-east-1",
+        "Arn": "arn:aws:lambda:us-east-1:743067955746:function:S3Trigger8ff6a97a-dev",
+        "Name": "S3Trigger8ff6a97a-dev",
+        "LambdaExecutionRole": "S3Trigger8ff6a97aLambdaRole8ff6a97a-dev"
+      },
+      "lastPushDirHash": "MrlGCByY3//jhuxI9OyxeJRhrMc="
+    }
+  },
+  "storage": {
+    "TrueMotiveVideoStorage1": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "S3Trigger8ff6a97a",
+          "attributes": [
+            "Name",
+            "Arn",
+            "LambdaExecutionRole"
+          ]
+        }
+      ],
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-truemotives3adapter-dev-171705-deployment/amplify-cfn-templates/storage/s3-cloudformation-template.json",
+        "logicalId": "storageTrueMotiveVideoStorage1"
+      },
+      "lastPushTimeStamp": "2021-09-04T04:24:25.748Z",
+      "output": {
+        "BucketName": "truemotivevideostorage1171705-dev",
+        "Region": "us-east-1"
+      },
+      "lastPushDirHash": "DPUM1S5iPWJl/B68Apc1m16aK0o="
+    }
+  }
 }

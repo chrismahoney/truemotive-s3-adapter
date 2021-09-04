@@ -6,7 +6,28 @@ const awsmobile = {
     "aws_appsync_graphqlEndpoint": "https://5ihnccjfsrdstfr7lte5pnp3hu.appsync-api.us-east-1.amazonaws.com/graphql",
     "aws_appsync_region": "us-east-1",
     "aws_appsync_authenticationType": "API_KEY",
-    "aws_appsync_apiKey": "da2-k2ybrgqsxzdxlh66pxriuvojl4"
+    "aws_appsync_apiKey": "da2-k2ybrgqsxzdxlh66pxriuvojl4",
+    "aws_cognito_identity_pool_id": "us-east-1:e11790b6-a417-417f-889c-94729d037ba2",
+    "aws_cognito_region": "us-east-1",
+    "aws_user_pools_id": "us-east-1_mrC7WlJBd",
+    "aws_user_pools_web_client_id": "3h2r8c82po1b7r4215vv29jh50",
+    "oauth": {},
+    "aws_cognito_login_mechanisms": [
+        "EMAIL"
+    ],
+    "aws_cognito_signup_attributes": [
+        "EMAIL"
+    ],
+    "aws_cognito_mfa_configuration": "OFF",
+    "aws_cognito_mfa_types": [
+        "SMS"
+    ],
+    "aws_cognito_password_protection_settings": {
+        "passwordPolicyMinLength": 8,
+        "passwordPolicyCharacters": []
+    },
+    "aws_user_files_s3_bucket": "truemotivevideostorage1171705-dev",
+    "aws_user_files_s3_bucket_region": "us-east-1"
 };
 
 
